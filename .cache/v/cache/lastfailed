@@ -1,1 +1,5 @@
-{}
+{
+  "brewkit/tests/test_relays.py::TestRelays::test_relay_get_and_set": true,
+  "brewkit/tests/test_str116.py::TestSTR116::test_get_relay": true,
+  "brewkit/tests/test_str116.py::TestSTR116::test_set_relay": true
+}

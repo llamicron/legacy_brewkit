@@ -22,3 +22,21 @@ class TestRelays(unittest.TestCase):
         assert relay.get() == 1
         relay.set(0)
         assert relay.get() == 0
+
+    def test_binary(self):
+        bin = relays.Binary(3, self.str116)
+
+        assert type(bin) is relays.Relay
+        assert bin.possible_states == {0: 'closed', 1: 'open'}
+
+    def test_pump(self):
+        pump = relays.Pump(3, self.str116)
+
+        assert type(pump) is relays.Relay
+        assert pump.possible_states == {0: 'off', 1: 'on'}
+
+    def test_divert(self):
+        divert = relays.Divert(3, self.str116, {0: 'mash', 1: 'boil'})
+
+        assert type(divert) is relays.Relay
+        assert divert.possible_states == {0: 'mash', 1: 'boil'}
