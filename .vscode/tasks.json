@@ -1,0 +1,12 @@
+{
+  "tasks": [
+    {
+      "label": "test",
+      "command": "pytest",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
+}
