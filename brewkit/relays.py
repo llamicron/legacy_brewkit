@@ -1,6 +1,6 @@
 from .str116 import STR116
 
-class Binary(object):
+class Relay(object):
     def __init__(self, address, controller):
         self.address = address
         assert type(controller) is STR116
